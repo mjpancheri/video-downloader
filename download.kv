@@ -1,0 +1,30 @@
+<Window@MDFloatLayout>
+  MDLabel:
+    text: "Youtube Video Downloader"
+    font_size: "20sp"
+    pos_hint: {"center_x":.85, "center_y":.6}
+    
+  MDTextField:
+    size_hint_x: .5
+    mode: "rectangle"
+    hint_text: "Type video url"
+    pos_hint: {"center_x":.5, "center_y":.5}
+    id: url
+    
+  MDRaisedButton:
+    text: "Download"
+    md_bg_color: 0,0.3,1,1
+    pos_hint: {"center_x":.5, "center_y":.4}
+    on_press: root.download()
+  
+  MDSwitch:
+    id: open_browser
+    pos_hint: {'center_x':.4, 'center_y':.3}
+    active: True
+
+  MDLabel:
+    text: "Open when finished"
+    font_size: "16sp"
+    pos_hint: {"center_x":.94, "center_y":.3}
+
+Window:
