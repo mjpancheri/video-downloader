@@ -13,7 +13,7 @@ sudo pacman -Sy python-pip
 ```  
 
 ## How it works
-> Giving a youtube video URL, the program will download this video in the chosen resolution (default 720p).
+> Giving a youtube video ID (you can pass a list of IDs separeted by comma), the program will download this video in the chosen resolution (default 720p).
 
 ### command-line
 ```bash
